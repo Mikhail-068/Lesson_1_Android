@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="204sp">
+
+        <RadioButton
+            android:id="@+id/radioButtonCpp"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:text="@string/C"
+            android:textColor="@color/C"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonJava"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Java"
+            android:textColor="@color/Java"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonKotlin"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Kotlin"
+            android:textColor="@color/Kotlin"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPython"
+            android:layout_width="197dp"
+            android:layout_height="70dp"
+            android:text="@string/Python"
+            android:textColor="@color/Python"
+            android:textSize="30sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="159dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:text="Submit"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="377dp"
+        android:layout_height="91dp"
+        android:layout_below="@id/submitButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-551dp"
+        android:textColor="@color/select"
+        android:gravity="center"
+        android:textSize="24sp" />
+
+</RelativeLayout>
